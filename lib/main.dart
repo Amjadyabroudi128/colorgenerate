@@ -33,28 +33,34 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Enter Hex Code to change backGround Color',
-            ),
-            SizedBox(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                controller: myController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder()
-                ),
-
+    return GestureDetector(
+      onTap: () => unFocus(context),
+      child: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'Enter Hex Code to change backGround Color',
               ),
-            )
-          ],
+              SizedBox(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  controller: myController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder()
+                  ),
+      
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
   }
+}
+unFocus (context) {
+  return FocusScope.of(context).requestFocus(FocusNode());
 }
