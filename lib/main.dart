@@ -28,6 +28,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Color CurrentClr = Colors.white;
+  TextEditingController myController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
