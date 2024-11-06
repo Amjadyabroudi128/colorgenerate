@@ -30,7 +30,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Color CurrentClr = Colors.white;
   TextEditingController myController = TextEditingController();
-
+  InputBorder myBorder = OutlineInputBorder(
+    borderRadius: const BorderRadius.all(
+      const Radius.circular(10.0),
+    ),
+  );
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -50,19 +54,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   controller: myController,
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.tag),
-                    border: OutlineInputBorder(
-                      borderRadius:  BorderRadius.all(
-                         Radius.circular(10.0),
-                      ),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: const BorderRadius.all(
-                        const Radius.circular(10.0),
-                      ),
+                    border: myBorder,
+                    focusedBorder: myBorder
                     ),
                   ),
                 ),
-              ),
               Text("Current Color is $CurrentClr")
             ],
           ),
