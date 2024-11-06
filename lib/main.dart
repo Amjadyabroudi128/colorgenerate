@@ -42,12 +42,15 @@ class _MyHomePageState extends State<MyHomePage> {
               'Enter Hex Code to change backGround Color',
             ),
             SizedBox(),
-            TextField(
-              controller: myController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder()
-              ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: myController,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder()
+                ),
 
+              ),
             )
           ],
         ),
