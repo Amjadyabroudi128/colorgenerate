@@ -49,11 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextField(
                   controller: myController,
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.tag),
                     border: OutlineInputBorder()
                   ),
-      
                 ),
-              )
+              ),
+              Text("Current Color is $CurrentClr")
             ],
           ),
         ),
