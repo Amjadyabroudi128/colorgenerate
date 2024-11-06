@@ -41,7 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Enter Hex Code to change backGround Color',
             ),
-
+            SizedBox(),
+            TextField(
+              controller: myController,
+            )
           ],
         ),
       ),
