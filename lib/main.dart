@@ -44,6 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(),
             TextField(
               controller: myController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder()
+              ),
+
             )
           ],
         ),
