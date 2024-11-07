@@ -75,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     border: myBorder,
                     focusedBorder: myBorder
                     ),
+                  onSubmitted: UpdateClr,
                   ),
                 ),
               Text("Current Color is $CurrentClr")
