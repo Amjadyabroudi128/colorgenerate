@@ -46,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               const Text(
                 'Enter Hex Code to change backGround Color',
-                style: TextStyle(),
               ),
               SizedBox(),
               Padding(
@@ -62,6 +61,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Text("Current Color is $CurrentClr",
+              ),
+              Text("Some Examples"),
+              Container(
+                color: Colors.blue,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text("BLUE"),
+                      Spacer(),
+                      SelectableText("#0000FF")
+                    ],
+                  ),
+                ),
               )
             ],
           ),
