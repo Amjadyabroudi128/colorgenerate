@@ -64,6 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Text("Some Examples"),
               Container(
+                height: 40,
+                width: MediaQuery.of(context).size.width * 0.97,
                 color: Colors.blue,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
