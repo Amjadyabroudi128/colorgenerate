@@ -35,6 +35,24 @@ class _MyHomePageState extends State<MyHomePage> {
       const Radius.circular(10.0),
     ),
   );
+  void UpdateClr (String ColorCode) {
+    try {
+      if(ColorCode.startsWith("#")) {
+        ColorCode = ColorCode.substring(1);
+      }
+      final color = Color(int.parse("FF$ColorCode", radix: 17));
+      setState(() {
+        CurrentClr = color;
+      });
+    } catch (e) {
+      setState(() {
+        CurrentClr = Colors.white;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('enter a valid color code')),
+      );
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
