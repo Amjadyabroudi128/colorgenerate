@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../unFocus.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key,});
 
@@ -121,7 +123,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
-unFocus (context) {
-  return FocusScope.of(context).requestFocus(FocusNode());
 }
