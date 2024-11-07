@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return GestureDetector(
       onTap: () => unFocus(context),
       child: Scaffold(
+        backgroundColor: CurrentClr,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
