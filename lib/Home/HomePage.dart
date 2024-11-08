@@ -1,3 +1,6 @@
+import 'dart:ffi';
+
+import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:flutter/material.dart';
 
@@ -59,14 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: TextField(
-                  controller: myController,
-                  decoration: InputDecoration(
-                      border: myBorder,
-                      focusedBorder: myBorder
-                  ),
-                  onSubmitted: UpdateClr,
-                ),
+                child: searchField(myController: myController, myBorder: myBorder, onSubmitted: UpdateClr,),
               ),
               SizedBox(height: 5,),
               Text("Some Examples"),
@@ -128,4 +124,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
