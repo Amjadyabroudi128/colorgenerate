@@ -19,9 +19,20 @@ class _MyHomePageState extends State<MyHomePage> {
   );
 
   void UpdateClr (String ColorCode) {
+    final myPattern = RegExp(r'^[A-Fa-f0-9]{6}$').hasMatch(ColorCode);
     try {
       if(ColorCode.startsWith("#")) {
         ColorCode = ColorCode.substring(1);
+      }
+      if (ColorCode.length == 6 || myPattern) {
+        print("Color is valid");
+      } else if (ColorCode.length < 6) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('should be at least 6 charachters')),
+        );
+        setState(() {
+        });
+        return;
       }
       final color = Color(int.parse("FF$ColorCode", radix: 16));
       setState(() {
@@ -29,11 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     } catch (e) {
       setState(() {
-        CurrentClr = Colors.white;
+        CurrentClr = CurrentClr;
       });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('enter a valid color code')),
-      );
     }
   }
   @override
@@ -48,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               const Text(
                 'Enter Hex Code to change backGround Color',
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(),
               Padding(
@@ -55,14 +64,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextField(
                   controller: myController,
                   decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.tag),
                       border: myBorder,
                       focusedBorder: myBorder
                   ),
                   onSubmitted: UpdateClr,
                 ),
-              ),
-              Text("Current Color is $CurrentClr",
               ),
               SizedBox(height: 5,),
               Text("Some Examples"),
