@@ -1,3 +1,4 @@
+import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:flutter/material.dart';
 
 import '../unFocus.dart';
@@ -54,10 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text(
-                'Enter Hex Code to change backGround Color',
-                style: TextStyle(fontSize: 16),
-              ),
+              TextEnter(),
               SizedBox(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -130,3 +128,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
