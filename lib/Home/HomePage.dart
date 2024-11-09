@@ -2,6 +2,7 @@
 import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:colorgenerate/consts/Colors.dart';
+import 'package:colorgenerate/consts/snackbar.dart';
 import 'package:flutter/material.dart';
 
 import '../unFocus.dart';
@@ -31,9 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
       if (ColorCode.length == 6 || myPattern) {
         print("Color is valid");
       } else if (ColorCode.length < 6) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('should be at least 6 charachters')),
-        );
+        showSnackBar("should be at least 6 charachters", context);
         setState(() {
         });
         return;
