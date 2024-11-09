@@ -3,4 +3,5 @@
 
 class myColors {
   static Color Cblue = Colors.blue;
+  static Color Cyellow = Colors.yellow;
  }
