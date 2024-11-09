@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
@@ -15,7 +14,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Color CurrentClr = Colors.white;
+  Color CurrentClr = myColors.myCurrent;
   TextEditingController myController = TextEditingController();
   InputBorder myBorder = OutlineInputBorder(
     borderRadius: const BorderRadius.all(
