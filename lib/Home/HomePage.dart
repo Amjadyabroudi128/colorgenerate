@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
+import 'package:colorgenerate/consts/Colors.dart';
 import 'package:flutter/material.dart';
 
 import '../unFocus.dart';
@@ -70,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 height: 40,
                 width: MediaQuery.of(context).size.width * 0.97,
-                color: Colors.blue,
+                color: myColors.Cblue,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
