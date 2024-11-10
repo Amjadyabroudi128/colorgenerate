@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 7,),
+              MyBox(height: 7,),
               Container(
                 height: 40,
                 width: MediaQuery.of(context).size.width * 0.97,
