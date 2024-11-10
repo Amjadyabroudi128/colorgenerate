@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               SizedBox(height: 5,),
               Text("Some Examples"),
-              SizedBox(height: 9,),
+              MyBox(height: 9,),
               Container(
                 height: 40,
                 width: MediaQuery.of(context).size.width * 0.97,
