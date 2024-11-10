@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: searchField(myController: myController, myBorder: myBorder, onSubmitted: UpdateClr,),
               ),
-              SizedBox(height: 5,),
+              MyBox(height: 5,),
               Text("Some Examples"),
               MyBox(height: 9,),
               Container(
