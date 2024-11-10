@@ -2,6 +2,7 @@
 import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:colorgenerate/consts/Colors.dart';
+import 'package:colorgenerate/consts/SizedBox.dart';
 import 'package:colorgenerate/consts/snackbar.dart';
 import 'package:flutter/material.dart';
 
@@ -99,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 7,),
+              MyBox(height: 7,),
               Container(
                 height: 40,
                 width: MediaQuery.of(context).size.width * 0.97,
