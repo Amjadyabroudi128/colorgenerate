@@ -67,22 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyBox(height: 5,),
               Text("Some Examples"),
               MyBox(height: 9,),
-              Container(
-                height: 40,
-                width: MediaQuery.of(context).size.width * 0.97,
-                color: myColors.Cblue,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text("BLUE"),
-                      Spacer(),
-                      SelectableText("#0000FF")
-                    ],
-                  ),
-                ),
-              ),
+              BlueContainer(),
               MyBox(height: 7,),
               Container(
                 height: 40,
@@ -119,6 +104,32 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class BlueContainer extends StatelessWidget {
+  const BlueContainer({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 40,
+      width: MediaQuery.of(context).size.width * 0.97,
+      color: myColors.Cblue,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text("BLUE"),
+            Spacer(),
+            SelectableText("#0000FF")
+          ],
         ),
       ),
     );
