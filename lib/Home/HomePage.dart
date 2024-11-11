@@ -6,6 +6,7 @@ import 'package:colorgenerate/Home/widgets/YellowContainer.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:colorgenerate/consts/Colors.dart';
 import 'package:colorgenerate/consts/SizedBox.dart';
+import 'package:colorgenerate/consts/colorUpadte.dart';
 import 'package:colorgenerate/consts/snackbar.dart';
 import 'package:flutter/material.dart';
 
@@ -27,32 +28,16 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   );
 
-  void UpdateClr (String ColorCode) {
-    final myPattern = RegExp(r'^[A-Fa-f0-9]{6}$').hasMatch(ColorCode);
-    try {
-      if(ColorCode.startsWith("#")) {
-        ColorCode = ColorCode.substring(1);
-      }
-      if (ColorCode.length == 6 || myPattern) {
-        print("Color is valid");
-      } else if (ColorCode.length < 6) {
-        showSnackBar("should be at least 6 charachters", context);
-        setState(() {
-        });
-        return;
-      }
-      final color = Color(int.parse("FF$ColorCode", radix: 16));
-      setState(() {
-        CurrentClr = color;
-      });
-    } catch (e) {
-      setState(() {
-        CurrentClr = CurrentClr;
-      });
-    }
-  }
   @override
   Widget build(BuildContext context) {
+    final update = Update(
+        onUpdateColor: (Color) {
+          setState(() {
+            CurrentClr = Color;
+          });
+        },
+        context: context
+    );
     return GestureDetector(
       onTap: () => unFocus(context),
       child: Scaffold(
@@ -65,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: searchField(myController: myController, myBorder: myBorder, onSubmitted: UpdateClr,),
+                child: searchField(myController: myController, myBorder: myBorder, onSubmitted: update.updateClr,),
               ),
               MyBox(height: 5,),
               Text("Some Examples"),
