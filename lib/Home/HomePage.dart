@@ -73,22 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyBox(height: 7,),
               YellowContainer(),
               MyBox(height: 7,),
-              Container(
-                height: 40,
-                width: MediaQuery.of(context).size.width * 0.97,
-                color: myColors.Cgreen,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text("GREEN"),
-                      Spacer(),
-                      SelectableText("#00FF00")
-                    ],
-                  ),
-                ),
-              ),
+              GreenContainer(),
             ],
           ),
         ),
@@ -96,6 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
 
 
