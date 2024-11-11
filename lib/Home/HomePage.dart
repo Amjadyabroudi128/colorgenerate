@@ -1,6 +1,7 @@
 
 import 'package:colorgenerate/Home/widgets/BlueContainer.dart';
 import 'package:colorgenerate/Home/widgets/TextField.dart';
+import 'package:colorgenerate/Home/widgets/YellowContainer.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
 import 'package:colorgenerate/consts/Colors.dart';
 import 'package:colorgenerate/consts/SizedBox.dart';
@@ -70,22 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyBox(height: 9,),
               BlueContainer(),
               MyBox(height: 7,),
-              Container(
-                height: 40,
-                width: MediaQuery.of(context).size.width * 0.97,
-                color: myColors.Cyellow,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text("YELLOW"),
-                      Spacer(),
-                      SelectableText("#FFFF00")
-                    ],
-                  ),
-                ),
-              ),
+              YellowContainer(),
               MyBox(height: 7,),
               Container(
                 height: 40,
@@ -110,5 +96,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
 
