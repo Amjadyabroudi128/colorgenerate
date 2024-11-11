@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   );
   void handleUpdateColor(String colorCode) {
     setState(() {
-      CurrentClr = updateClr(colorCode, context);
+      CurrentClr = myUpdate.updateClr(colorCode, context);
     });
   }
   @override
