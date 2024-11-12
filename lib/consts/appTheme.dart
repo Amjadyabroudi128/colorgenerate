@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Colors.dart';
+
 class AppTheme {
  static final InputBorder myBorder = OutlineInputBorder(
     borderRadius: const BorderRadius.all(
@@ -13,8 +15,8 @@ class AppTheme {
       enabledBorder: myBorder,
     ),
     textSelectionTheme: TextSelectionThemeData(
-      cursorColor: Colors.black,
-      selectionHandleColor: Colors.black,
+      cursorColor: myColors.cursor,
+      selectionHandleColor: myColors.cursor,
     )
   );
 
