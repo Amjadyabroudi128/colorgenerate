@@ -11,6 +11,11 @@ class AppTheme {
       border: myBorder,
       focusedBorder: myBorder,
       enabledBorder: myBorder,
+    ),
+    textSelectionTheme: TextSelectionThemeData(
+      cursorColor: Colors.black,
+      selectionHandleColor: Colors.black,
     )
   );
+
 }
