@@ -1,3 +1,4 @@
+import 'package:colorgenerate/consts/textStyle.dart';
 import 'package:flutter/material.dart';
 
 class TextEnter extends StatelessWidget {
@@ -7,9 +8,9 @@ class TextEnter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
+    return  Text(
       'Enter Hex Code to change backGround Color',
-      style: TextStyle(fontSize: 16),
+      style: enter,
     );
   }
 }
