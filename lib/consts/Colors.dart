@@ -6,4 +6,5 @@ class myColors {
   static Color Cyellow = Colors.yellow;
   static Color myCurrent = Colors.white;
   static Color Cgreen = Colors.green;
+  static Color cursor = Colors.black;
  }
