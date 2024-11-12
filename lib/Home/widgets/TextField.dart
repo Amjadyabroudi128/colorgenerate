@@ -4,11 +4,10 @@ class searchField extends StatelessWidget {
   const searchField({
     super.key,
     required this.myController,
-    required this.myBorder, this.onSubmitted,
+    this.onSubmitted,
   });
 
   final TextEditingController myController;
-  final InputBorder myBorder;
   final ValueChanged<String>? onSubmitted;
 
   @override
@@ -16,8 +15,6 @@ class searchField extends StatelessWidget {
     return TextField(
       controller: myController,
       decoration: InputDecoration(
-          border: myBorder,
-          focusedBorder: myBorder
       ),
       onSubmitted: onSubmitted,
     );
