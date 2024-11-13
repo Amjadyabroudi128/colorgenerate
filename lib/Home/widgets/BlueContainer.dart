@@ -11,7 +11,12 @@ class BlueContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return myContainer(
-      color: myColors.Cblue,
+      decoration: BoxDecoration(
+        color: myColors.Cblue,
+        borderRadius: BorderRadius.all(
+          Radius.circular(12)
+        )
+      ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
