@@ -14,8 +14,6 @@ class searchField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: myController,
-      decoration: InputDecoration(
-      ),
       onSubmitted: onSubmitted,
     );
   }
