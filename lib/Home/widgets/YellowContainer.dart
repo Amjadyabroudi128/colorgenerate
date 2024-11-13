@@ -10,8 +10,6 @@ class YellowContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: MediaQuery.of(context).size.width * 0.97,
       color: myColors.Cyellow,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
