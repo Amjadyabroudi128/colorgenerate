@@ -22,11 +22,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Color CurrentClr = myColors.myCurrent;
   TextEditingController myController = TextEditingController();
-  InputBorder myBorder = OutlineInputBorder(
-    borderRadius: const BorderRadius.all(
-      const Radius.circular(10.0),
-    ),
-  );
   void handleUpdateColor(String colorCode) {
     setState(() {
       CurrentClr = myUpdate.updateClr(colorCode, context);
