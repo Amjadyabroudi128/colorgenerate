@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class myContainer extends StatelessWidget {
   final Color? color;
   final Widget? child;
-  const myContainer({super.key, this.color, this.child});
+  final Decoration? decoration;
+  const myContainer({super.key, this.color, this.child, this.decoration});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: decoration,
       height: 40,
       width: MediaQuery.of(context).size.width * 0.97,
       color: color,
