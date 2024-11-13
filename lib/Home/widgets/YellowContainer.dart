@@ -1,3 +1,4 @@
+import 'package:colorgenerate/myContainer.dart';
 import 'package:flutter/material.dart';
 
 import '../../consts/Colors.dart';
@@ -9,7 +10,7 @@ class YellowContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return myContainer(
       color: myColors.Cyellow,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
