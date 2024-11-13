@@ -7,9 +7,11 @@ class myContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 40,
       width: MediaQuery.of(context).size.width * 0.97,
+      color: color,
+      child: child,
     );
   }
 }
