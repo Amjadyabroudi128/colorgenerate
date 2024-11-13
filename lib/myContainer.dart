@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class myContainer extends StatelessWidget {
-  Color color;
-  const myContainer({super.key});
+  final Color? color;
+  final Widget? child;
+  const myContainer({super.key, this.color, this.child});
 
   @override
   Widget build(BuildContext context) {
