@@ -16,7 +16,7 @@ class GreenContainer extends StatelessWidget {
       child: Padding(
         padding: Edges,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: kStart,
           children: [
             Text("GREEN"),
             Spacer(),
