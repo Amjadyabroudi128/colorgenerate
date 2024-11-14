@@ -1,6 +1,7 @@
 import 'package:colorgenerate/myContainer.dart';
 import 'package:flutter/material.dart';
 
+import '../../consts/BorderRadius.dart';
 import '../../consts/Colors.dart';
 
 class BlueContainer extends StatelessWidget {
@@ -13,9 +14,7 @@ class BlueContainer extends StatelessWidget {
     return myContainer(
       decoration: BoxDecoration(
         color: myColors.Cblue,
-        borderRadius: BorderRadius.all(
-          Radius.circular(12)
-        )
+        borderRadius: myBorder
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
