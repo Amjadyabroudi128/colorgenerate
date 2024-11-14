@@ -1,3 +1,5 @@
+import 'package:colorgenerate/consts/BorderRadius.dart';
+import 'package:colorgenerate/myContainer.dart';
 import 'package:flutter/material.dart';
 
 import '../../consts/Colors.dart';
@@ -9,10 +11,8 @@ class GreenContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      width: MediaQuery.of(context).size.width * 0.97,
-      color: myColors.Cgreen,
+    return myContainer(
+      decoration: Bdecoration(myColors.Cgreen, myBorder),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
