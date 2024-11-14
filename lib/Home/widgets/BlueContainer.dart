@@ -12,10 +12,7 @@ class BlueContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return myContainer(
-      decoration: BoxDecoration(
-        color: myColors.Cblue,
-        borderRadius: myBorder
-      ),
+      decoration: Bdecoration(myColors.Cblue, myBorder),
       child: Padding(
         padding: Edges,
         child: Row(
