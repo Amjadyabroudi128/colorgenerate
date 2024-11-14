@@ -14,7 +14,7 @@ class GreenContainer extends StatelessWidget {
     return myContainer(
       decoration: Bdecoration(myColors.Cgreen, myBorder),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: Edges,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
