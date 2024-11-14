@@ -17,7 +17,7 @@ class BlueContainer extends StatelessWidget {
         borderRadius: myBorder
       ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: Edges,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
