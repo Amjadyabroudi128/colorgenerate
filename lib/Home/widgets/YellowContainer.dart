@@ -13,9 +13,8 @@ class YellowContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return myContainer(
       decoration: Bdecoration(myColors.Cyellow, myBorder),
-      // color: myColors.Cyellow,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: Edges,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
