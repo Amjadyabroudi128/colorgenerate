@@ -11,6 +11,7 @@ class YellowContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String yellow = "#FFFF00";
     return myContainer(
       decoration: Bdecoration(myColors.Cyellow, myBorder),
       child: Padding(
@@ -20,7 +21,7 @@ class YellowContainer extends StatelessWidget {
           children: [
             Text("YELLOW"),
             Spacer(),
-            SelectableText("#FFFF00")
+            SelectableText(yellow)
           ],
         ),
       ),
