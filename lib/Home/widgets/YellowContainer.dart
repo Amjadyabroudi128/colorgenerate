@@ -11,7 +11,6 @@ class YellowContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String yellowHex = "#FFFF00";
     String yellow = "YELLOW";
     return myContainer(
       decoration: Bdecoration(myColors.Cyellow, myBorder),
@@ -22,7 +21,7 @@ class YellowContainer extends StatelessWidget {
           children: [
             Text(yellow),
             Spacer(),
-            SelectableText(yellowHex)
+            SelectableText(myColors.yellowHex)
           ],
         ),
       ),
