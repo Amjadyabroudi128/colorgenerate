@@ -11,6 +11,7 @@ class BlueContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String BlueHex = "#0000FF";
     return myContainer(
       decoration: Bdecoration(myColors.Cblue, myBorder),
       child: Padding(
@@ -20,7 +21,7 @@ class BlueContainer extends StatelessWidget {
           children: [
             Text("BLUE"),
             Spacer(),
-            SelectableText("#0000FF")
+            SelectableText(BlueHex)
           ],
         ),
       ),
