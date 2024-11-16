@@ -10,4 +10,5 @@ class myColors {
   static String BlueHex = "#0000FF";
   static String yellowHex = "#FFFF00";
   static String Syellow = "YELLOW";
+  static String GreenHex = "#00FF00";
  }
