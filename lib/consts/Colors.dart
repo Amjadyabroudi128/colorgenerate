@@ -9,4 +9,5 @@ class myColors {
   static Color cursor = Colors.black;
   static String BlueHex = "#0000FF";
   static String yellowHex = "#FFFF00";
+  static String Syellow = "YELLOW";
  }
