@@ -20,7 +20,7 @@ class GreenContainer extends StatelessWidget {
           children: [
             Text("GREEN"),
             Spacer(),
-            SelectableText("#00FF00")
+            SelectableText(myColors.GreenHex)
           ],
         ),
       ),
