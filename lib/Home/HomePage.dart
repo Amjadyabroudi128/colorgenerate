@@ -4,6 +4,7 @@ import 'package:colorgenerate/Home/widgets/GreenContainer.dart';
 import 'package:colorgenerate/Home/widgets/TextField.dart';
 import 'package:colorgenerate/Home/widgets/YellowContainer.dart';
 import 'package:colorgenerate/Home/widgets/enterText.dart';
+import 'package:colorgenerate/consts/BorderRadius.dart';
 import 'package:colorgenerate/consts/Colors.dart';
 import 'package:colorgenerate/consts/SizedBox.dart';
 import 'package:colorgenerate/consts/snackbar.dart';
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: CurrentClr,
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: Kcentre,
             children: <Widget>[
               TextEnter(),
               SizedBox(),
