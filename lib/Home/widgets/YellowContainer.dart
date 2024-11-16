@@ -11,7 +11,6 @@ class YellowContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String yellow = "YELLOW";
     return myContainer(
       decoration: Bdecoration(myColors.Cyellow, myBorder),
       child: Padding(
@@ -19,7 +18,7 @@ class YellowContainer extends StatelessWidget {
         child: Row(
           mainAxisAlignment: kStart,
           children: [
-            Text(yellow),
+            Text(myColors.Syellow),
             Spacer(),
             SelectableText(myColors.yellowHex)
           ],
