@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: searchField(myController: myController, onSubmitted: handleUpdateColor,),
               ),
               MyBox(height: 5,),
-              Text("Some Examples"),
+              Text("Some Examples", style: TextStyle(fontSize: 14, color: Colors.grey.shade800),),
               MyBox(height: 9,),
               BlueContainer(),
               MyBox(height: 7,),
