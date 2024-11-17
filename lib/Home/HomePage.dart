@@ -10,6 +10,7 @@ import 'package:colorgenerate/consts/SizedBox.dart';
 import 'package:colorgenerate/consts/snackbar.dart';
 import 'package:flutter/material.dart';
 
+import '../consts/textStyle.dart';
 import '../consts/update.dart';
 import '../unFocus.dart';
 
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: searchField(myController: myController, onSubmitted: handleUpdateColor,),
               ),
               MyBox(height: 5,),
-              Text("Some Examples", style: TextStyle(fontSize: 14, color: Colors.grey.shade800),),
+              Text("Some Examples", style: examples,),
               MyBox(height: 9,),
               BlueContainer(),
               MyBox(height: 7,),
