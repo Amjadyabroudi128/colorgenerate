@@ -7,6 +7,7 @@ class myColors {
   static Color myCurrent = Colors.white;
   static Color Cgreen = Colors.green;
   static Color cursor = Colors.black;
+  static Color? exampleClr = Colors.grey[850];
   static String BlueHex = "#0000FF";
   static String yellowHex = "#FFFF00";
   static String Syellow = "YELLOW";
