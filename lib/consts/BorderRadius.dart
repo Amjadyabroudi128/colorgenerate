@@ -13,3 +13,4 @@ Decoration Bdecoration(Color color, BorderRadiusGeometry borderRadius) {
     borderRadius: borderRadius
   );
 }
+double contHeight = 40;
