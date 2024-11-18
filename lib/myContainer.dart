@@ -1,3 +1,4 @@
+import 'package:colorgenerate/consts/BorderRadius.dart';
 import 'package:flutter/material.dart';
 
 class myContainer extends StatelessWidget {
@@ -10,7 +11,7 @@ class myContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: decoration,
-      height: 40,
+      height: contHeight,
       width: MediaQuery.of(context).size.width * 0.97,
       color: color,
       child: child,
