@@ -18,7 +18,7 @@ class BlueContainer extends StatelessWidget {
         child: Row(
           mainAxisAlignment: kStart,
           children: [
-            Text("BLUE"),
+            Text(myColors.sBlue),
             Spacer(),
             SelectableText(myColors.BlueHex)
           ],
