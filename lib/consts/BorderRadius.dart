@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 BorderRadiusGeometry myBorder = BorderRadius.all(
     Radius.circular(12)
 );
+InputBorder meBorder = const OutlineInputBorder(
+  borderRadius: BorderRadius.all(
+    Radius.circular(10.0),
+  ),
+);
 EdgeInsetsGeometry Edges = EdgeInsets.all(8.0);
 MainAxisAlignment kStart = MainAxisAlignment.start;
 MainAxisAlignment Kcentre = MainAxisAlignment.center;
