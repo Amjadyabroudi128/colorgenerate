@@ -14,3 +14,6 @@ Decoration Bdecoration(Color color, BorderRadiusGeometry borderRadius) {
   );
 }
 double contHeight = 40;
+double myWidth(context) {
+  return MediaQuery.of(context).size.width * 0.97;
+}
