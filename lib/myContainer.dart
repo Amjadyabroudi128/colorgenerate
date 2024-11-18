@@ -12,7 +12,7 @@ class myContainer extends StatelessWidget {
     return Container(
       decoration: decoration,
       height: contHeight,
-      width: MediaQuery.of(context).size.width * 0.97,
+      width: myWidth(context),
       color: color,
       child: child,
     );
